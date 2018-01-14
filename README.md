@@ -1,6 +1,6 @@
 # Overview
 - This repository is for CBRE.
-- You could request an English version, if you'd like.
+- An English version can be provided upon request.
 - Please refer to the test.R file; I've added some comments on each block of codes which explain my thought process on producing the graphs.
 
 
