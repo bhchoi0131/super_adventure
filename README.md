@@ -4,8 +4,10 @@
 - Please refer to the test.R file; I've added some comments on each block of codes which explain my thought process on producing the graphs.
 
 
+
 <br/>
 <br/>
+
 
 # Report
 - 数値が正しいか確認する前に、20個のデータファイルを全部合併すると、行数(nrow())がサンプルの数値(N=49,532)と違う結果になります。
@@ -17,7 +19,8 @@
   sum(is.na(total_dt))=0
 ```
 
-- 数値を確認すると、出身都道府県別平均年齢が 0.02くらいが違う結果値になりますが、これはサンプル数の違いによると思っております。
+
+- 一番目のグラフの数値を確認すると、出身都道府県別平均年齢が 0.02くらいが違う結果値になりますが、これはサンプル数の違いによると思っております。
 ```
   > total_dt1$avg_age[match("富山県", total_dt1$出身地)]
 [1] 40.14148　　
@@ -30,6 +33,23 @@
 
 　> total_dt1$avg_age[match("群馬県", total_dt1$出身地)]
 [1] 39.62681
+```
+
+
+- 二番目の数値を確認すると、都道府県別同一域内にとどまっている割合が 0.01くらいが違うか、同一な結果値になりますが、
+　これはサンプル数の違いによると思っております
+```
+> eval_stay_dt$stay_perc[match("愛知県", eval_stay_dt$出身地)]
+[1] 2.829268
+
+> eval_stay_dt$stay_perc[match("岩手県", eval_stay_dt$出身地)]
+[1] 2.610442
+
+> eval_stay_dt$stay_perc[match("熊本県", eval_stay_dt$出身地)]
+[1] 2.392344
+
+> eval_stay_dt$stay_perc[match("山形県", eval_stay_dt$出身地)]
+[1] 2.293121
 ```
 
 
