@@ -7,10 +7,11 @@
 # Report
 - 数値が正しいか確認する前に、20個のデータファイルを全部合併した後行数(nrow())がサンプルの数値(N=49,532)と違う結果になります。
   まず、sum(is.na()) =0　で、missing dataは無いのを確信しましたため、49530件のデータを元に処理を進行しました。
-```  nrow(data_address)=49530
-     nrow(data_hometown)=49530
-     nrow(total_dt)=49530
-     sum(is.na(total_dt))=0
+```
+  nrow(data_address)=49530
+  nrow(data_hometown)=49530
+  nrow(total_dt)=49530
+  sum(is.na(total_dt))=0
 ```
 
 - 数値を確認すると、出身都道府県別平均年齢が 0.002くらいで違う結果値になりますが、これはサンプル数の違いによると思っております。
