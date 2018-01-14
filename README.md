@@ -1,11 +1,14 @@
 # Overview
 - This repository is for CBRE.
-- Please refer to the test.R file.
+- You could request an English version, if you'd like.
+- Please refer to the test.R file; I've added some comments on each block of codes which explain my thought process on producing the graphs.
+
+
 <br/>
 <br/>
 
 # Report
-- 数値が正しいか確認する前に、20個のデータファイルを全部合併した後行数(nrow())がサンプルの数値(N=49,532)と違う結果になります。
+- 数値が正しいか確認する前に、20個のデータファイルを全部合併すると、行数(nrow())がサンプルの数値(N=49,532)と違う結果になります。
   まず、sum(is.na()) =0　で、missing dataは無いのを確信しましたため、49530件のデータを元に処理を進行しました。
 ```
   nrow(data_address)=49530
