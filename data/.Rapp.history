@@ -1,0 +1,124 @@
+TRUE == TRUE
+"Hello" == "Hi"
+3==2
+"hello" != "goodbye"
+"apple" > "banana"
+"apple" < "banana"
+TRUE > FALSE
+TRUE < FALSE
+"FALSE" < "TRUE"
+linkedin <- c(16, 9, 13, 5, 2, 17, 14)
+linkedin
+linkedin > 10
+facebook <- c(17, 7, 5, 16, 8, 13, 14)
+\
+facebook <- c(17, 7, 5, 16, 8, 13, 14)
+facebook
+linkedin > facebook
+in.numeric(5)
+is.numeric(5)
+!is.numeric(5)
+is.numeric("hello")
+install.packages("ggvis")
+library("ggvis")
+search()
+ggvis()
+library("ggvis")
+search()
+library()
+library("ggvis")
+library()
+search()
+library("ggvis")
+install.packages("ggvis")
+search()
+library()
+library[[21]]
+library()
+search()
+library("ggvis")
+library(ggvis)
+ggvis(mtcars,~wt,~hp)
+install.packages("ggvis")
+library()
+library("ggvis")
+library("data.table")
+require("data.table")
+result <- require("data.table")
+result
+library("ggplot2")
+require("ggplot2")
+?library
+?require
+?var
+?mode
+?median
+?mode
+?mod
+sys.date()
+sys.date
+today <- sys.date()
+sys.Date
+sys.Date()
+sys.time
+Sys.time()
+Sys.Date()
+Sys.date()
+?unclass
+utils
+library(utils)
+?read.table()
+# Import hotdogs.txt: hotdogs#
+> hotdogs <- read.delim("hotdogs.txt", header=FALSE)#
+> #
+> # Summarize hotdogs#
+> summary(hotdogs)#
+       V1           V2              V3       #
+ Beef   :20   Min.   : 86.0   Min.   :144.0  #
+ Meat   :17   1st Qu.:132.0   1st Qu.:362.5  #
+ Poultry:17   Median :145.0   Median :405.0  #
+              Mean   :145.4   Mean   :424.8  #
+              3rd Qu.:172.8   3rd Qu.:503.5  #
+              Max.   :195.0   Max.   :645.0#
+>
+?file.path
+install.packages("readr")
+library(readr)
+?read_delim
+?read_delim)
+?read_delim())
+?read_delim()
+install.packages("data.table")
+library(data.table)
+install.packages("readr")
+library(readr)
+library(readxl)
+install.packages("readxl")
+library(readxl)
+library(gdata)
+install.packages("gdata")
+library(gdata)
+install.packages("Perl")
+install.packages("XLConnect")
+library(XLConnect)
+library("XLConnect")
+?library
+?read_excel
+?to.data.frame
+install.packages("RMySQL")
+library(DBI)
+getwd()
+setwd("Users/boheechoi/Desktop/quiz/data/")
+file_list1 <- list.files(path="Users/boheechoi/Desktop/quiz/data")
+file_list1
+data.frame()
+data.frame(file_list)
+data.frame(file_list1)
+file_list1 <- list.files(path="Users/boheechoi/Desktop/quiz/data")
+file_list1
+getwd()
+setwd("Users/boheechoi/Desktop/quiz/data/")
+total
+getwd()
+setwd("/Users/boheechoi/desktop/quiz/data/")
+getwd()
