@@ -1,2 +1,3 @@
 # super_adventure
-for CBRE
+This repository is for CBRE.
+Please refer to the test.R file.
