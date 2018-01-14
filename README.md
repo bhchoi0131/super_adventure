@@ -1,8 +1,33 @@
-# super_adventure
+# Overview
 - This repository is for CBRE.
 - Please refer to the test.R file.
 <br/>
 <br/>
+
+# Report
+- 数値が正しいか確認する前に、データファイルを全部合併すると氏名による行数(nrow())がサンプル結果のと違います。
+　データ処理した結果では、
+```  nrow(data_address)=49530
+  nrow(data_hometown)=49530
+  nrow(total_dt)=49530
+```
+  になります。
+  
+  まず、sum(is.na()) functionを使ってデータ値を持って無い行は無いのを確信しましたため、49530件のデータを元に処理を進行しました。
+  
+```
+  > total_dt1$avg_age[match("富山県", total_dt1$出身地)]
+[1] 40.14148　　
+
+　> total_dt1$avg_age[match("山梨県", total_dt1$出身地)]
+[1] 39.93554
+
+　> total_dt1$avg_age[match("愛媛県", total_dt1$出身地)]
+[1] 39.72601
+
+　> total_dt1$avg_age[match("群馬県", total_dt1$出身地)]
+[1] 39.62681
+```
 
 ## 出身都道府県別平均年齢
 ![Chart 1](https://github.com/bhchoi0131/super_adventure/blob/master/Screen%20Shot%202018-01-14%20at%209.24.54%20PM.png)
@@ -12,3 +37,12 @@
 
 ## 都道府県別平均年齢と同一域内にとどまっている割合の関係
 ![Chart 3](https://github.com/bhchoi0131/super_adventure/blob/master/Screen%20Shot%202018-01-14%20at%209.25.45%20PM.png)
+
+
+Q1. 数字が正しいか確認し、間違っていれば正しい数字に修正した数字を元に、新たに同一フォーマットのレポートを作成してください。
+Q2. またデータ加工に用いたスクリプトと作成したレポートへのリンクをGitHub上で共有してください。
+
+データを作成するにあたり、一般常識や知識を用いて、仮定をおいてかまいません。
+仮定をおいた場合は、それとその根拠を明記してください。
+
+チャートのデータの定義があいまいな場合は、内容を自由に解釈していただいてもよいですし、質問していただいてもかまいません。
